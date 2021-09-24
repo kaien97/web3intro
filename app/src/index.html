@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VolcanoCoin | Truffle Webpack Demo w/ Frontend</title>
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <div class="alert" style="display: none">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      This is an alert box.
+    </div>
+
+    <h1>VolcanoCoin — Example Truffle Dapp</h1>
+    <p>You have <strong class="balance">loading...</strong> Volcano Coins</p>
+
+    <h1>Send VolcanoCoin</h1>
+
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount" placeholder="e.g. 95" />
+
+    <label for="receiver">To address:</label>
+    <input
+      type="text"
+      id="receiver"
+      placeholder="e.g. 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"
+    />
+
+    <button onclick="App.sendCoin()">Send VolcanoCoin</button>
+
+    <p id="status"></p>
+    <p>
+      <strong>Hint:</strong> open the browser developer console to view any
+      errors and warnings.
+    </p>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<style>
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: green; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+</style>
